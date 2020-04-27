@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body class="theme theme_color_light">
+  <div class="container">
+    <button class="button">
+      <div class="button__play"></div>
+      <div class="button__waves"></div>
+    </button>
+
+  <ul class="theme-switcher">
+    <li>
+      <input type="radio" checked class="theme-switcher__item theme-switcher__item_color_light" id="light" name="theme">
+      <label class="theme-switcher__label" for="light" onclick="changeTheme('light')"></label>
+    </li>
+    <li>
+      <input type="radio" class="theme-switcher__item theme-switcher__item_color_dark" id="dark" name="theme">
+      <label class="theme-switcher__label" for="dark" onclick="changeTheme('dark')"></label>
+    </li>
+    <li>
+      <input type="radio" class="theme-switcher__item theme-switcher__item_color_blue" id="blue" name="theme">
+      <label class="theme-switcher__label" for="blue" onclick="changeTheme('blue')"></label>
+    </li>
+    <li>
+      <input type="radio" class="theme-switcher__item theme-switcher__item_color_orange" id="orange" name="theme">
+      <label class="theme-switcher__label" for="orange" onclick="changeTheme('orange')"></label>
+    </li>
+    <li>
+      <input type="radio" class="theme-switcher__item theme-switcher__item_color_studio" id="studio" name="theme">
+      <label class="theme-switcher__label" for="studio" onclick="changeTheme('studio')"></label>
+    </li>
+    <li>
+      <input type="radio" class="theme-switcher__item theme-switcher__item_color_lazur" id="lazur" name="theme">
+      <label class="theme-switcher__label" for="lazur" onclick="changeTheme('lazur')"></label>
+    </li>
+  </ul>
+  </div>
+</body>
+<script>
+  const theme = document.querySelector('.theme');
+  const changeTheme = (color) => {
+    theme.className = `theme theme_color_${color}`;
+  };
+</script>
+</html>

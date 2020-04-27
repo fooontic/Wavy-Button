@@ -1,0 +1,58 @@
+.theme {
+  --color-active: hsl(187, 100%, 50%);
+  --color-active-hover: hsl(180, 100%, 60%);
+  --color-active-pressed: hsl(162, 100%, 50%);
+}
+
+.theme_color_light {
+  --color-bg-default: rgb(230, 230, 230);
+  --light: 255, 255, 255;
+  --shadow: 0, 0, 0;
+  --light-mod: 1;
+  --shadow-mod: 1;
+}
+
+.theme_color_dark {
+  --color-bg-default: rgb(40, 40, 40);
+  --light: 255, 255, 255;
+  --shadow: 0, 0, 0;
+  --light-mod: 0.08;
+  --shadow-mod: 2;
+}
+
+.theme_color_blue {
+  --color-bg-default: rgb(0, 2, 230);
+  --light: 51, 54, 255;
+  --shadow: 0, 0, 60;
+  --light-mod: 0.4;
+  --shadow-mod: 3;
+}
+
+.theme_color_orange {
+  --color-bg-default: rgb(255, 123, 0);
+  --light: 255, 200, 20;
+  --shadow: 135, 38, 0;
+  --light-mod: 0.4;
+  --shadow-mod: 3;
+}
+
+.theme_color_studio {
+  --color-bg-default: rgb(12, 24, 180);
+  --shadow: 110, 0, 0;
+  --light: 0, 0, 255;
+  --light-mod: 0.3;
+  --shadow-mod: 2.2;
+}
+
+.theme_color_lazur {
+  --color-bg-default: rgb(0, 255, 242);
+  --light: 203, 255, 226;
+  --shadow: 153, 0, 255;
+  --light-mod: 0.5;
+  --shadow-mod: 3;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(120deg, rgba(var(--shadow), calc(0 * var(--shadow-mod))) 30%, rgba(var(--shadow), calc(0.2 * var(--shadow-mod)))), linear-gradient(var(--color-bg-default), var(--color-bg-default));
+}
